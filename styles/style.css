@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair Display", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6, strong {
+    color:rgb(126, 38, 51);
+}
+
+p {
+    font-size: 1rem; /* 16px */
+    line-height: 1.9rem;
+}
+
+p, 
+span, 
+label, 
+input, 
+textarea, 
+li {
+    color:rgb(126, 38, 51);
+}
+
+a {
+   text-decoration: none; 
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px){
+    .main-container {
+        width: 90%;
+    }
+}
+
+/* titlles */
+.section-title {
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+
+.pre-title{
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color:rgb(182, 75, 91);
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.pre-title::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background:rgb(182, 75, 91);
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
+
+/* Layout */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+/* Logo and Navigation Menu */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.logo a {
+    color:rgb(126, 38, 51);
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color:rgb(126, 38, 51);
+
+}
+
+
+/* Hero Section */
+#hero {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    align-items: center;
+}
+
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+}
+
+.hero-right img {
+    width: 90%;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+}
+
+/* Gallery */
+#gallery {
+    background-color: rgb(253, 220, 226);
+    padding: rgb(253, 220, 226);
+}
+
+.gallery .pre-title {
+    margin: 0 auto;
+}
+
+.gallery-title {
+    text-align: center;
+}
+
+.gallery {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color:rgb(253, 220, 226); 
+    border-radius:rgb(253, 220, 226);
+}
+
+.gallery-icon img{
+    margin: 50px auto;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid rgb(239, 145, 161);
+    border-radius: 5px;
+}
