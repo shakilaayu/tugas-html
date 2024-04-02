@@ -164,3 +164,13 @@ nav ul li a {
     border: 1px solid rgb(239, 145, 161);
     border-radius: 5px;
 }
+
+/* Contact */
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.contact-from div {
+    margin-bottom: 1.4rem;
+}
